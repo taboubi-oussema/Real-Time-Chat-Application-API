@@ -27,8 +27,7 @@ app.use("/api/auth", authRoutes);
 // Socket.io connection handler
 
 
-const PORT = process.env.PORT || 5000;
 
-server.listen(PORT, () => {
+server.listen(5000, () => {
   console.log(`Server running on port ${PORT}`);
 });
