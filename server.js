@@ -18,9 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.get("/", (req,res)=>{
-  res.send("bvfds")
-});
+app.use("/a", authRoutes);
 
 // Create HTTP server
 
