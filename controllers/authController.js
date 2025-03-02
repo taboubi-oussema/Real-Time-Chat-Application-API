@@ -36,7 +36,8 @@ exports.register = async (req, res) => {
 // @route   POST /api/auth/login
 // @access  Public
 exports.login = async (req, res) => {
-  res.send("gfeds")};
+  return res.json({message:"fjlkdjfo"});
+};
 
 // @desc    Get User BY Id
 // @route   GET /api/auth/me
