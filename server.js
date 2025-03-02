@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/a", (req,res)=>{
+app.get("/a", (req,res)=>{
   res.status(200).json({message:"hiiiii"})
 });
 
