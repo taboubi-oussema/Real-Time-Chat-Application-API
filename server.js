@@ -18,7 +18,9 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/api/auth", authRoutes);
+app.use("/a", (req,res)=>{
+  res.status(200).json({message:"hiiiii"})
+});
 
 // Create HTTP server
 
