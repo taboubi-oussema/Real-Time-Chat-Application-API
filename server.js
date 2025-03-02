@@ -19,7 +19,7 @@ app.use(cors());
 
 // Routes
 app.get("/", (req,res)=>{
-  res.status(200).json({message:"hiiiii"})
+  res.send("bvfds")
 });
 
 // Create HTTP server
