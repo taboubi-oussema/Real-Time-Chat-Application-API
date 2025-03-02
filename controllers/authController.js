@@ -36,13 +36,15 @@ exports.register = async (req, res) => {
 // @route   POST /api/auth/login
 // @access  Public
 exports.login = async (req, res) => {
-  return res.json({message:"fjlkdjfo"});
+  
 };
 
 // @desc    Get User BY Id
 // @route   GET /api/auth/me
 // @access  Private
-exports.getUserById = async (req, res) => {};
+exports.getUserById = async (req, res) => {
+  res.send("meeeeeeeeeeeeeeeeeeeeeee")
+};
 
 // @desc    Update user profile
 // @route   PUT /api/auth/profile

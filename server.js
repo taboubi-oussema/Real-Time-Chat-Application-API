@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/a", authRoutes);
+app.use("/api/auth", authRoutes);
 
 // Create HTTP server
 
