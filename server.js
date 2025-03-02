@@ -1,6 +1,4 @@
 const express = require("express");
-const http = require("http");
-const socketio = require("socket.io");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
@@ -23,7 +21,7 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 
 // Create HTTP server
-const server = http.createServer(app);
+
 
 
 // Socket.io connection handler
