@@ -43,7 +43,8 @@ exports.login = async (req, res) => {
 // @route   GET /api/auth/me
 // @access  Private
 exports.getUserById = async (req, res) => {
-  res.send("meeeeeeeeeeeeeeeeeeeeeee")
+  res.send("fds")
+  
 };
 
 // @desc    Update user profile
