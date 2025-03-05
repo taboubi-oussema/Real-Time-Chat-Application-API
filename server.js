@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, "dist")));
 app.use(express.json());
 app.use(cors());
 
-app.get("/chat", (req, res) => {
+app.get("/login/*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
