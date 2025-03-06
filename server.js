@@ -23,6 +23,9 @@ app.use(cors());
 app.get("/login/*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
+app.get("/chat/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
 
 // Routes
 app.use("/api/auth", authRoutes);
