@@ -4,9 +4,8 @@ const {
   register,
   login,
   getUserById,
-  updateProfile,
+  
 } = require("../controllers/authController");
-
 
 // Register a new user
 router.post("/register", register);
@@ -15,9 +14,8 @@ router.post("/register", register);
 router.post("/login", login);
 
 // Get current user
-router.get("/me/:id",  getUserById);
+router.get("/me/:id", getUserById);
 
-// Update user profile
-router.put("/profile", updateProfile);
+
 
 module.exports = router;

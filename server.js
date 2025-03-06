@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const path = require("path");
+const User = require("./models/User"); // Import your User model
 // Load environment variables
 dotenv.config();
 
@@ -34,7 +35,6 @@ const io = require("socket.io")(http, {
     methods: ["GET", "POST"],
   },
 });
-
 // Socket.io connection handler
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
@@ -43,7 +43,14 @@ io.on("connection", (socket) => {
     io.emit("receiveMessage", data); // Broadcast message to all users
   });
 
-  socket.on("disconnect", () => console.log("User disconnected:", socket.id));
+  socket.on("sendPrivateMessage", ({ recipientId, message, username }) => {
+    socket.to(recipientId).emit("receiveMessage", { user: username, message }); // Send message to specific user
+  });
+
+  socket.on("disconnect", () => {
+    console.log("User disconnected:", socket.id);
+    // Optionally, you can remove the socket ID from the database here
+  });
 });
 
 http.listen(5000, () => {
