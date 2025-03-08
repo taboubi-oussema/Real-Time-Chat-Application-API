@@ -22,7 +22,12 @@ This Real-Time Chat Application is a web-based chat platform that allows users t
 - **Deployment**: 
   - Railway (for hosting the backend)
   - GitHub Pages or similar for the frontend
+## 📊 Project Status
 
+![Version](https://github.com/taboubi-oussema/Real-Time-Chat-Application-API/blob/main/Capture%20d'%C3%A9cran%202025-03-08%20135033.png)
+![Status](https://github.com/taboubi-oussema/Real-Time-Chat-Application-API/blob/main/Capture%20d'%C3%A9cran%202025-03-08%20135110.png)
+![License](https://github.com/taboubi-oussema/Real-Time-Chat-Application-API/blob/main/Capture%20d'%C3%A9cran%202025-03-08%20135238.png)
+[Click here if you would like to give it a try.](https://real-time-chat-application-api-production-9728.up.railway.app/)
 ## 🔨 Installation
 
 ### Prerequisites
@@ -84,8 +89,3 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 ## 📞 Contact
 For any inquiries or feedback, please reach out to [taboubioussema78@gmail.com](mailto:taboubioussema78@gmail.com).
-
-## 📊 Project Status
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
-![License](https://img.shields.io/badge/License-MIT-yellow)
